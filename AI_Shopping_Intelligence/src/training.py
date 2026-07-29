@@ -31,9 +31,9 @@ def training(x,y):
     
     # Save both the model and the vectorizer
     model_path=r"C:\Users\LENOVO\Desktop\Shopping\AI_Shopping_Intelligence\model\model.pkl"
-    # vectorizer_path=r"C:\Users\LENOVO\Desktop\Shopping\AI_Shopping_Intelligence\model\vectorizer.pkl"
+    vectorizer_path=r"C:\Users\LENOVO\Desktop\Shopping\AI_Shopping_Intelligence\model\vectorizer.pkl"
     joblib.dump(model, model_path)
-    # joblib.dump(vectorizer, vectorizer_path)
+    joblib.dump(vectorizer, vectorizer_path)
     print("Model and Vectorizer trained and saved successfully")
     print(f"The Best Model found is {model.best_estimator}")
 
